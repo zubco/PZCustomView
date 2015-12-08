@@ -1,9 +1,9 @@
 # PZCustomView
 
-##What is it
+## What is it
 * Xcode custom UIView templates, wich creates for you a XIB - loadable UIView subclass with it .XIB file configurated respectively.
 
-##Templates
+## Templates
 
 It comes with templates:
 * Complete Custom View
@@ -13,14 +13,29 @@ A UIView subclass with .XIB loading logic (NO XIB file).
 * Inherited Custom View
 A custom UIView subclass and .XIB file (NO .XIB loading logic).
 
-##How to install
+## How to install
 
-###Via git clone
+### Using Alcatraz
 
-	cd ~/Library/Developer/Xcode/Templates/File\ Templates
-	git clone https://github.com/zubco/PZCustomView.git PZCustomView
+> Recommended
 
-##How to use
+`PZCustomView` can be installed via the [Alcatraz](http://alcatraz.io/) plugin manager.
+
+If you don't have it installed, you can install it using:
+
+```
+curl -fsSL https://raw.githubusercontent.com/supermarin/Alcatraz/deploy/Scripts/install.sh | sh
+```
+
+After installing restart Xcode and go to `Window -> PackageManager`(cmd + 9). From there you can search for `PZCustomView` and install it.
+
+### Manually
+```
+cd ~/Library/Developer/Xcode/Templates/File\ Templates
+git clone https://github.com/zubco/PZCustomView.git PZCustomView
+```
+
+## How to use
 * Access from Xcode menu "New File" option.
 * Find in iOS templates "PZCustomView" and choose one from 3 templates.
 
