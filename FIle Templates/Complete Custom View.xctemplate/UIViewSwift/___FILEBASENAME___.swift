@@ -15,7 +15,7 @@ class ___FILEBASENAMEASIDENTIFIER___: ___VARIABLE_cocoaTouchSubclass___ {
     
     // MARK: - Lifecycle
     
-    required init(coder aDecoder: NSCoder) {
+    required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         commonInit()
     }
@@ -43,8 +43,8 @@ class ___FILEBASENAMEASIDENTIFIER___: ___VARIABLE_cocoaTouchSubclass___ {
     Loads view from Nib, considering that nibName is the same as class name.
     */
     func loadViewFromNib() {
+        let nibName = String(self.dynamicType)
         let bundle  = NSBundle(forClass: self.dynamicType)
-        let nibName = NSStringFromClass(self.dynamicType).componentsSeparatedByString(".").last as String!
         let nib     = UINib(nibName: nibName, bundle: bundle)
         nib.instantiateWithOwner(self, options: nil)
     }
