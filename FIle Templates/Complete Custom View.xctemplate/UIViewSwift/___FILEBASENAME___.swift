@@ -34,7 +34,7 @@ class ___FILEBASENAMEASIDENTIFIER___: ___VARIABLE_cocoaTouchSubclass___ {
         loadViewFromNib()
         
         contentView.frame = bounds
-        contentView.backgroundColor = UIColor.clearColor()
+        contentView.backgroundColor = .clear
         
         addSubview(contentView)
     }
@@ -43,9 +43,9 @@ class ___FILEBASENAMEASIDENTIFIER___: ___VARIABLE_cocoaTouchSubclass___ {
     Loads view from Nib, considering that nibName is the same as class name.
     */
     func loadViewFromNib() {
-        let nibName = String(self.dynamicType)
-        let bundle  = NSBundle(forClass: self.dynamicType)
+        let nibName = String(describing: type(of: self))
+        let bundle  = Bundle(for: type(of: self))
         let nib     = UINib(nibName: nibName, bundle: bundle)
-        nib.instantiateWithOwner(self, options: nil)
+        nib.instantiate(withOwner: self, options: nil)
     }
 }
