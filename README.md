@@ -128,8 +128,6 @@ After this point there is no need to worry about layout if constraints are set c
 
 ![Storyboard Scene](https://github.com/zubco/PZCustomView/blob/master/Images/StoryboardScene.png)
 
-![Object Library](https://github.com/zubco/PZCustomView/blob/master/Images/ObjectLibrary.png)
-
 5. For this object from *Identity inspector* set it's *Custom Class* to your recently created UIView subclass.
 
 ![Custom Class](https://github.com/zubco/PZCustomView/blob/master/Images/CustomClass.png)
