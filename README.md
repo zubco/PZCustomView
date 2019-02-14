@@ -116,20 +116,27 @@ After this point there is no need to worry about layout if constraints are set c
 1. Access from Xcode menu *New File* option.
 2. In *iOS* tab, *User interface* category find *Custom view* option.
    
-![Find template](https://github.com/zubco/PZCustomView/blob/master/Images/FindTemplate.png)
+<p align="center">
+   <img src="https://github.com/zubco/PZCustomView/blob/master/Images/FindTemplate.png" width="600">
+   <img src="https://github.com/zubco/PZCustomView/blob/master/Images/Wizard.png" width="600">
+</p>
 
 3. After you complete wizard steps, you will have in project your custom view files ( .swift + .xib or .h, .m + .xib).
 
-![Wizard](https://github.com/zubco/PZCustomView/blob/master/Images/Wizard.png)
-
-![Project files](https://github.com/zubco/PZCustomView/blob/master/Images/ProjectFiles.png)
+<p align="center">
+   <img src="https://github.com/zubco/PZCustomView/blob/master/Images/ProjectFiles.png" width="300">
+</p>
 
 4. Go to a storyboard or any other .xib file and drag & drop from *Object Library* a UIView object.
 
-![Storyboard Scene](https://github.com/zubco/PZCustomView/blob/master/Images/StoryboardScene.png)
+<p align="center">
+   <img src="https://github.com/zubco/PZCustomView/blob/master/Images/StoryboardScene.png" width="300">
+</p>
 
 5. For this object from *Identity inspector* set it's *Custom Class* to your recently created UIView subclass.
 
-![Custom Class](https://github.com/zubco/PZCustomView/blob/master/Images/CustomClass.png)
+<p align="center">
+   <img src="https://github.com/zubco/PZCustomView/blob/master/Images/CustomClass.png" width="300">
+</p>
 
 6. Ready to go :]
