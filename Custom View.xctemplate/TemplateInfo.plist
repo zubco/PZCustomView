@@ -3,9 +3,9 @@
 <plist version="1.0">
 <dict>
 	<key>DefaultCompletionName</key>
-	<string>CustomView</string>
+	<string>Custom view</string>
 	<key>Description</key>
-	<string>A UIView subclass with .XIB loading logic and .XIB file itself.</string>
+	<string>Create a UIView subclass with nib loading logic &amp; a xib file.</string>
 	<key>Kind</key>
 	<string>Xcode.IDEKit.TextSubstitutionFileTemplateKind</string>
 	<key>Options</key>
@@ -18,36 +18,13 @@
 			<key>Identifier</key>
 			<string>productName</string>
 			<key>Name</key>
-			<string>Class:</string>
+			<string>UIView subclass name:</string>
 			<key>NotPersisted</key>
 			<true/>
 			<key>Required</key>
 			<true/>
 			<key>Type</key>
 			<string>text</string>
-		</dict>
-		<dict>
-			<key>Default</key>
-			<string>UIView</string>
-			<key>Description</key>
-			<string>What class to subclass in the new file</string>
-			<key>Identifier</key>
-			<string>cocoaTouchSubclass</string>
-			<key>Name</key>
-			<string>Subclass of:</string>
-			<key>Required</key>
-			<string>YES</string>
-			<key>Suffixes</key>
-			<dict>
-				<key>UIView</key>
-				<string>View</string>
-			</dict>
-			<key>Type</key>
-			<string>class</string>
-			<key>Values</key>
-			<array>
-				<string>UIView</string>
-			</array>
 		</dict>
 		<dict>
 			<key>AllowedTypes</key>
@@ -87,14 +64,28 @@
 				<string>Objective-C</string>
 			</array>
 		</dict>
+		<dict>
+			<key>Identifier</key>
+			<string>WithExtension</string>
+			<key>Name</key>
+			<string>Also add UIView - nib loading extension </string>
+			<key>Description</key>
+			<string>Whether to add loadFromNib</string>
+			<key>Type</key>
+			<string>checkbox</string>
+			<key>Default</key>
+			<string>false</string>
+			<key>NotPersisted</key>
+			<true/>
+		</dict>
 	</array>
 	<key>Platforms</key>
 	<array>
 		<string>com.apple.platform.iphoneos</string>
 	</array>
 	<key>SortOrder</key>
-	<string>10</string>
+	<string>1</string>
 	<key>Summary</key>
-	<string>A Cocoa Touch class</string>
+	<string>A UIView subclass</string>
 </dict>
 </plist>
