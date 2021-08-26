@@ -1,5 +1,8 @@
 # PZCustomView
 
+## Deprecated
+Latest versions of Xcode doesn't support custom file/project templates any more. Rest in peace ⚰️.
+
 ## What is it ?
 Xcode - custom UIView templates, that creates for you a nib - loadable UIView subclass with it's .xib file respectively.
 
